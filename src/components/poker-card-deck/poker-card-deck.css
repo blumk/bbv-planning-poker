@@ -1,0 +1,12 @@
+poker-card-deck div.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+poker-card-deck poker-card {
+  flex: 1 0 25%; /* 3 items per row (4 without margins) */
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px lightgray;
+  height: 100px;
+  margin: 5px;
+}

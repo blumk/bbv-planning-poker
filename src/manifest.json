@@ -1,13 +1,15 @@
 {
-  "name": "Ionic PWA Toolkit",
-  "short_name": "Ionic PWA",
+  "name": "Stencil Poker",
+  "short_name": "StencilPoker",
   "start_url": "/",
-  "display": "standalone",
-  "icons": [{
-    "src": "assets/icon/icon.png",
-    "sizes": "512x512",
-    "type": "image/png"
-  }],
-  "background_color": "#488aff",
-  "theme_color": "#488aff"
+  "display": "fullscreen",
+  "icons": [
+    {
+      "src": "assets/icon/icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "background_color": "#CD0A21",
+  "theme_color": "#CD0A21"
 }

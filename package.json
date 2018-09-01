@@ -1,8 +1,8 @@
 {
-  "name": "@ionic/pwa-toolkit",
+  "name": "@bbvch/planning-poker",
   "private": true,
   "version": "0.0.1",
-  "description": "Ionic PWA Toolkit",
+  "description": "bbv Planning Poker",
   "files": [
     "dist/"
   ],
@@ -14,23 +14,23 @@
     "test.watch": "jest --watch"
   },
   "dependencies": {
-    "@ionic/core": "4.0.0-beta.6",
-    "@stencil/core": "0.12.3"
+    "@ionic/core": "4.0.0-beta.7",
+    "@stencil/core": "0.12.4"
   },
   "devDependencies": {
-    "@types/jest": "^22.2.2",
-    "jest": "^22.4.3"
+    "@types/jest": "^23.3.1",
+    "jest": "^23.5.0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ionic-team/ionic-pwa-toolkit.git"
+    "url": "git+https://github.com/blumk/bbv-planning-poker.git"
   },
-  "author": "Ionic Team",
+  "author": "Ken Blum",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ionic-team/stencil"
+    "url": "https://github.com/blumk/bbv-planning-poker"
   },
-  "homepage": "https://github.com/ionic-team/ionic-pwa-toolkit",
+  "homepage": "https://github.com/blumk/bbv-planning-poker",
   "jest": {
     "transform": {
       "^.+\\.(js|ts|tsx)$": "<rootDir>/node_modules/@stencil/core/testing/jest.preprocessor.js"

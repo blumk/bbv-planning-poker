@@ -1,0 +1,17 @@
+poker-card {
+  --card-background-color: salmon;
+  background: var(--card-background-color);
+  width: 100%;
+  height: 100%;
+}
+
+poker-card div {
+  position: relative;
+  float: left;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  color: white;
+  font-size: xx-large;
+}

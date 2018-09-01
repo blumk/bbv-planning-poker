@@ -1,0 +1,5 @@
+# netlify.com
+/*
+  Link: </build/app.css>; rel=preload; as=style
+  Link: </build/app/tap-click.js>; rel=preload; as=script
+  Link: </build/app/gesture.js>; rel=preload; as=script

@@ -12,5 +12,8 @@ export const config: Config = {
     }
   ],
   globalScript: 'src/global/app.ts',
-  globalStyle: 'src/global/app.css'
+  globalStyle: 'src/global/app.css',
+  copy: [
+    { src: '_headers' }
+  ]
 };

@@ -1,17 +1,15 @@
-# Ionic PWA Toolkit Beta
+# bbv Planning Poker
 
-The PWA Toolkit is a starting point for building Progressive Web Apps using Ionic and Stencil.
-This combination of tools gives you the ability to build a fast, efficient PWA out of the box.
+A planning poker app built with Stencil to demonstrate Ionic 4.
 
 Note: This project is **Beta** and uses a beta release of `@ionic/core`.
 
-For more info check out our [homepage](https://ionicframework.com/pwa/toolkit)!
+For more info check out the Ionic PWA Toolkit [homepage](https://ionicframework.com/pwa/toolkit)!
 
 ## Features
 
-* `@ionic/core` for the UI.
-* Stencil for the application logic and routing
-* Push Notifications setup
+* `@ionic/core` for the UI and routing
+* Stencil for the application logic
 * Unit Tests
 * Pre-rendering
 * Lazy-loading and code splitting
@@ -22,12 +20,12 @@ For more info check out our [homepage](https://ionicframework.com/pwa/toolkit)!
 
 ## Getting Started
 
-To start building, clone this repo to a new directory:
+Clone this repo and run:
 
 ```bash
-npm init stencil ionic-pwa
+npm install
+npm start
 ```
-
 
 ## Production
 

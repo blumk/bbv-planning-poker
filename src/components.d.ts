@@ -12,62 +12,105 @@ import 'ionicons';
 
 export namespace Components {
 
-  interface AppHome {}
-  interface AppHomeAttributes extends StencilHTMLAttributes {}
+  interface BbvPlanningPoker {}
+  interface BbvPlanningPokerAttributes extends StencilHTMLAttributes {}
 
-  interface AppProfile {
-    'name': string;
+  interface PageCardDetail {
+    'id': string;
   }
-  interface AppProfileAttributes extends StencilHTMLAttributes {
-    'name'?: string;
+  interface PageCardDetailAttributes extends StencilHTMLAttributes {
+    'id'?: string;
   }
 
-  interface AppRoot {}
-  interface AppRootAttributes extends StencilHTMLAttributes {}
+  interface PageCardOverview {}
+  interface PageCardOverviewAttributes extends StencilHTMLAttributes {}
+
+  interface PageSettings {}
+  interface PageSettingsAttributes extends StencilHTMLAttributes {}
+
+  interface PokerCardDeck {}
+  interface PokerCardDeckAttributes extends StencilHTMLAttributes {}
+
+  interface PokerCard {
+    'color': string;
+  }
+  interface PokerCardAttributes extends StencilHTMLAttributes {
+    'color'?: string;
+  }
 }
 
 declare global {
   interface StencilElementInterfaces {
-    'AppHome': Components.AppHome;
-    'AppProfile': Components.AppProfile;
-    'AppRoot': Components.AppRoot;
+    'BbvPlanningPoker': Components.BbvPlanningPoker;
+    'PageCardDetail': Components.PageCardDetail;
+    'PageCardOverview': Components.PageCardOverview;
+    'PageSettings': Components.PageSettings;
+    'PokerCardDeck': Components.PokerCardDeck;
+    'PokerCard': Components.PokerCard;
   }
 
   interface StencilIntrinsicElements {
-    'app-home': Components.AppHomeAttributes;
-    'app-profile': Components.AppProfileAttributes;
-    'app-root': Components.AppRootAttributes;
+    'bbv-planning-poker': Components.BbvPlanningPokerAttributes;
+    'page-card-detail': Components.PageCardDetailAttributes;
+    'page-card-overview': Components.PageCardOverviewAttributes;
+    'page-settings': Components.PageSettingsAttributes;
+    'poker-card-deck': Components.PokerCardDeckAttributes;
+    'poker-card': Components.PokerCardAttributes;
   }
 
 
-  interface HTMLAppHomeElement extends Components.AppHome, HTMLStencilElement {}
-  var HTMLAppHomeElement: {
-    prototype: HTMLAppHomeElement;
-    new (): HTMLAppHomeElement;
+  interface HTMLBbvPlanningPokerElement extends Components.BbvPlanningPoker, HTMLStencilElement {}
+  var HTMLBbvPlanningPokerElement: {
+    prototype: HTMLBbvPlanningPokerElement;
+    new (): HTMLBbvPlanningPokerElement;
   };
 
-  interface HTMLAppProfileElement extends Components.AppProfile, HTMLStencilElement {}
-  var HTMLAppProfileElement: {
-    prototype: HTMLAppProfileElement;
-    new (): HTMLAppProfileElement;
+  interface HTMLPageCardDetailElement extends Components.PageCardDetail, HTMLStencilElement {}
+  var HTMLPageCardDetailElement: {
+    prototype: HTMLPageCardDetailElement;
+    new (): HTMLPageCardDetailElement;
   };
 
-  interface HTMLAppRootElement extends Components.AppRoot, HTMLStencilElement {}
-  var HTMLAppRootElement: {
-    prototype: HTMLAppRootElement;
-    new (): HTMLAppRootElement;
+  interface HTMLPageCardOverviewElement extends Components.PageCardOverview, HTMLStencilElement {}
+  var HTMLPageCardOverviewElement: {
+    prototype: HTMLPageCardOverviewElement;
+    new (): HTMLPageCardOverviewElement;
+  };
+
+  interface HTMLPageSettingsElement extends Components.PageSettings, HTMLStencilElement {}
+  var HTMLPageSettingsElement: {
+    prototype: HTMLPageSettingsElement;
+    new (): HTMLPageSettingsElement;
+  };
+
+  interface HTMLPokerCardDeckElement extends Components.PokerCardDeck, HTMLStencilElement {}
+  var HTMLPokerCardDeckElement: {
+    prototype: HTMLPokerCardDeckElement;
+    new (): HTMLPokerCardDeckElement;
+  };
+
+  interface HTMLPokerCardElement extends Components.PokerCard, HTMLStencilElement {}
+  var HTMLPokerCardElement: {
+    prototype: HTMLPokerCardElement;
+    new (): HTMLPokerCardElement;
   };
 
   interface HTMLElementTagNameMap {
-    'app-home': HTMLAppHomeElement
-    'app-profile': HTMLAppProfileElement
-    'app-root': HTMLAppRootElement
+    'bbv-planning-poker': HTMLBbvPlanningPokerElement
+    'page-card-detail': HTMLPageCardDetailElement
+    'page-card-overview': HTMLPageCardOverviewElement
+    'page-settings': HTMLPageSettingsElement
+    'poker-card-deck': HTMLPokerCardDeckElement
+    'poker-card': HTMLPokerCardElement
   }
 
   interface ElementTagNameMap {
-    'app-home': HTMLAppHomeElement;
-    'app-profile': HTMLAppProfileElement;
-    'app-root': HTMLAppRootElement;
+    'bbv-planning-poker': HTMLBbvPlanningPokerElement;
+    'page-card-detail': HTMLPageCardDetailElement;
+    'page-card-overview': HTMLPageCardOverviewElement;
+    'page-settings': HTMLPageSettingsElement;
+    'poker-card-deck': HTMLPokerCardDeckElement;
+    'poker-card': HTMLPokerCardElement;
   }
 
 
