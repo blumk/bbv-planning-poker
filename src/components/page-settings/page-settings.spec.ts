@@ -13,9 +13,8 @@ describe('page-settings', () => {
       testWindow = new TestWindow();
       element = await testWindow.load({
         components: [PageSettings],
-        html: '<page-settings></page-settings>'
+        html: '<page-settings></page-settings>',
       });
     });
-
   });
 });

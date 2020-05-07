@@ -36,6 +36,10 @@ page-card-detail {
   font-size: x-large;
 }
 
+.card.is-flipped .card-face-front poker-card div {
+  visibility: hidden;
+}
+
 .card-face-back {
   background: var(--card-background-color);
   transform: rotateY(180deg);

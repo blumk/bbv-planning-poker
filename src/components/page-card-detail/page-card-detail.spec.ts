@@ -13,11 +13,10 @@ describe('page-card-detail', () => {
       testWindow = new TestWindow();
       element = await testWindow.load({
         components: [PageCardDetail],
-        html: '<bbv-card-page></bbv-card-page>'
+        html: '<bbv-card-page></bbv-card-page>',
       });
     });
 
     // See https://stenciljs.com/docs/unit-testing
-
   });
 });

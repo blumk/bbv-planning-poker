@@ -1,4 +1,3 @@
 export class Card {
-  constructor(public displayName: string, public color: string) {
-  };
+  constructor(public displayName: string, public color: string) {}
 }

@@ -13,9 +13,8 @@ describe('poker-card', () => {
       testWindow = new TestWindow();
       element = await testWindow.load({
         components: [BbvPokerCard],
-        html: '<poker-card></poker-card>'
+        html: '<poker-card></poker-card>',
       });
     });
-
   });
 });

@@ -1,11 +1,12 @@
 import { Component, Element, Prop } from '@stencil/core';
+import { h } from '@stencil/core';
 
 @Component({
   tag: 'poker-card',
   styleUrl: 'poker-card.css'
 })
 export class BbvPokerCard {
-  @Element() el: HTMLStencilElement;
+  @Element() el: HTMLPokerCardElement;
   @Prop() color: string;
 
   componentWillLoad()

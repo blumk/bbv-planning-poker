@@ -1,4 +1,4 @@
-import { RouterDirection } from "@ionic/core";
+import { RouterDirection } from '@ionic/core';
 
 // https://github.com/ionic-team/ionic/blob/master/core/src/utils/theme.ts
 export async function openURL(win: Window, url: string | undefined, ev?: Event, direction?: RouterDirection) {

@@ -13,9 +13,8 @@ describe('poker-card-deck', () => {
       testWindow = new TestWindow();
       element = await testWindow.load({
         components: [PokerCardDeck],
-        html: '<poker-card-deck></poker-card-deck>'
+        html: '<poker-card-deck></poker-card-deck>',
       });
     });
-
   });
 });

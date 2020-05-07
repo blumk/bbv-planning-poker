@@ -1,4 +1,5 @@
 import { Component } from '@stencil/core';
+import { h } from '@stencil/core';
 
 @Component({
   tag: 'page-card-overview',

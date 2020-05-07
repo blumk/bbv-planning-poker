@@ -2,22 +2,23 @@ import { Component, Element, Prop, State } from '@stencil/core';
 import { openURL } from '../../helpers/utils';
 import { scrumCardDeck } from '../poker-card-deck/card-deck';
 import { Card } from '../poker-card-deck/card';
+import { h } from '@stencil/core';
 
 @Component({
   tag: 'page-card-detail',
   styleUrl: 'page-card-detail.css'
 })
 export class PageCardDetail {
-  @Element() element: HTMLStencilElement;
+  @Element() element: HTMLPageCardDetailElement;
   @Prop({ context: 'window' }) window!: Window;
-  @Prop() id: string;
+  @Prop() deckId: string;
   @State() isFlipped = false;
   @State() card: Card;
 
   componentWillLoad()
   {
-    if(scrumCardDeck.has(this.id)){
-      this.card = scrumCardDeck.get(this.id);
+    if(scrumCardDeck.has(this.deckId)){
+      this.card = scrumCardDeck.get(this.deckId);
     }
     else {
       this.card = new Card('🙁', '#000000');

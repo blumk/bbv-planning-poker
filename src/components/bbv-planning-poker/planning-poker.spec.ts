@@ -8,12 +8,11 @@ describe('bbv-planning-poker', () => {
     window = new TestWindow();
     await window.load({
       components: [BbvPlanningPoker],
-      html: '<bbv-planning-poker></bbv-planning-poker>'
+      html: '<bbv-planning-poker></bbv-planning-poker>',
     });
   });
 
   it('should update', async () => {
     await window.flush();
   });
-
 });

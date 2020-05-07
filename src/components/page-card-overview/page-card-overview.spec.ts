@@ -13,13 +13,12 @@ describe('page-card-overview', () => {
       testWindow = new TestWindow();
       element = await testWindow.load({
         components: [PageCardOverview],
-        html: '<page-card-overview></page-card-overview>'
+        html: '<page-card-overview></page-card-overview>',
       });
     });
 
     it('should update', async () => {
       await testWindow.flush();
     });
-
   });
 });
