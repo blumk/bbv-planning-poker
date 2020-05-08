@@ -9,4 +9,5 @@ poker-card-deck poker-card {
   box-shadow: 2px 2px 5px lightgray;
   height: 100px;
   margin: 5px;
+  cursor: pointer;
 }

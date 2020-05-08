@@ -6,7 +6,7 @@ import { h } from '@stencil/core';
 
 @Component({
   tag: 'page-card-detail',
-  styleUrl: 'page-card-detail.css'
+  styleUrl: 'page-card-detail.css',
 })
 export class PageCardDetail {
   @Element() element: HTMLPageCardDetailElement;
@@ -15,12 +15,10 @@ export class PageCardDetail {
   @State() isFlipped = false;
   @State() card: Card;
 
-  componentWillLoad()
-  {
-    if(scrumCardDeck.has(this.deckId)){
+  componentWillLoad() {
+    if (scrumCardDeck.has(this.deckId)) {
       this.card = scrumCardDeck.get(this.deckId);
-    }
-    else {
+    } else {
       this.card = new Card('🙁', '#000000');
     }
 
@@ -29,12 +27,12 @@ export class PageCardDetail {
 
   render() {
     return (
-      <div class={'scene'} onClick={() => this.clickCard() }>
+      <div class={'scene'} onClick={() => this.clickCard()}>
         <div class={this.isFlipped ? 'card is-flipped' : 'card'}>
-          <div class="card-face card-face-front">
+          <div class="card__face card__face--front">
             <poker-card>MAKING VISIONS WORK.</poker-card>
           </div>
-          <div class="card-face card-face-back">
+          <div class="card__face card__face--back">
             <poker-card>{this.card.displayName}</poker-card>
           </div>
         </div>
@@ -43,7 +41,7 @@ export class PageCardDetail {
   }
 
   private clickCard() {
-    if(this.isFlipped) {
+    if (this.isFlipped) {
       this.openUrl();
     } else {
       this.isFlipped = true;
